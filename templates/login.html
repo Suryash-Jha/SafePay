@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 {% block title %}Home{% endblock %}
 {% block content %}
+
+
+{% if s%}
+<div class="p-3 mb-2 bg-success mx-auto text-white text-center">{{s}}</div>
+{%endif%}
+
+{% if us %}
+<div class="p-3 mb-2 bg-danger mx-auto text-center text-white">{{us}}</div>
+{%endif%}
+
 <div class="mx-auto" style="width: 300px;">
 <h1 class="display-1">Log In</h1>
 </div>
@@ -20,7 +30,5 @@
   <button type="submit" class="btn btn-primary mx-auto" style="width: 100px; margin: 10px">Submit</button>
 </form>
 </div>
-<h1>{{s}}</h1>
-<h1>{{us}}</h1>
 
-{% endblock %}
+{%endblock%}

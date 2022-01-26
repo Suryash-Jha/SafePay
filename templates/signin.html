@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 {% block title %}Home{% endblock %}
 {% block content %}
+{% if text%}
+<div class="p-3 mb-2 bg-success mx-auto text-white text-center">{{text}}</div>
+{%endif%}
+
+{% if problem %}
+<div class="p-3 mb-2 bg-danger mx-auto text-center text-white">{{problem}}</div>
+{%endif%}
+
 <div class="mx-auto" style="width: 300px;">
 
 <h1>{{text}}</h1>
