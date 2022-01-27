@@ -10,6 +10,16 @@
 
     <title>{% block title %}{% endblock %}</title>
     <style>
+
+      {%block style%} {%endblock%}
+
+/*      .bg-custom-1 {
+  background-color: #ccffee;
+}
+
+.bg-custom-2 {
+background-image: linear-gradient(15deg, #ccffee 0%,  #bf80ff 100%);
+}*/
     #bor {
     border: 2px solid blue;
     border-radius: 5px;
@@ -20,7 +30,7 @@
     </style>
   </head>
   <body>
-
+<div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">SafePay</a>
@@ -49,6 +59,7 @@
     </div>
   </div>
 </nav>
+</div>
 
 {% block content %}{% endblock %}
 

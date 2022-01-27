@@ -1,6 +1,29 @@
 {% extends "base.html" %}
 {% block title %}Home{% endblock %}
+{% block style %}
+
+	body {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg.jpg"); */
+  background-image:  url({{url_for('static',filename='bg.png')}});
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  <!-- margin: 652px 2px 2px 16px; -->
+}
+
+
+	{% endblock %}
 {% block content %}
-<h1>Home</h1>
+<div class="hero" style=" margin: 652px 2px 2px 16px; ">
+	
+</div>
 {% endblock %}
 
